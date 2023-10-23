@@ -5,7 +5,7 @@ import React from "react";
 export default function Footer() {
 	return (
 		<>
-			<div className="container flex flex-col bottom-border py-8">
+			<div className="container flex flex-col bottom-border py-16">
 				<h2 className="text-3xl font-bold">Social</h2>
 				<div className="flex gap-4 mt-6 items-center">
 					{Socials.map((social) => (
