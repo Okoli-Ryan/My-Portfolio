@@ -8,8 +8,8 @@ export default function ProjectImage({ name, desktop, mobile }: Partial<ProjectI
 		<div className="relative overflow-hidden">
 			<Image width={750} height={519} alt={`${name} desktop image`} src={desktop!} className="w-full h-auto max-w-xl object-contain" />
 			<Image
-				width={750}
-				height={519}
+				width={450}
+				height={1000}
 				alt={`${name} mobile image`}
 				src={mobile!}
 				className="absolute right-[5%] -bottom-[20%] h-full w-[30%] max-w-[unset] object-contain"
