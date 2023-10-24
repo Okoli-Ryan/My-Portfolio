@@ -6,6 +6,8 @@ export interface ProjectItemProps {
 	description: string;
 	type: "web" | "mobile";
 	tools?: string[];
+	liveUrl?: string;
+	codeUrl?: string;
 }
 
 export const PROJECTS: ProjectItemProps[] = [
@@ -17,6 +19,7 @@ export const PROJECTS: ProjectItemProps[] = [
 		link: "/billsclan",
 		type: "web",
 		tools: ["React", "Bootstrap 5", "JavaScript", "Redux", "PostgreSQL", ".NET", "C#", "Flutterwave", "Jest"],
+		liveUrl: "https://billsclan.shop/figocard",
 	},
 	{
 		desktop: "/images/projects/panto_desktop.png",
@@ -26,6 +29,8 @@ export const PROJECTS: ProjectItemProps[] = [
 		link: "/panto",
 		type: "web",
 		tools: ["React", "HTML", "CSS", "Ant Design"],
+		liveUrl: "https://panto-self.vercel.app",
+		codeUrl: "https://github.com/Okoli-Ryan/Panto",
 	},
 	{
 		desktop: "/images/projects/getlinked_desktop.png",
@@ -35,6 +40,8 @@ export const PROJECTS: ProjectItemProps[] = [
 		link: "/getlinked",
 		type: "web",
 		tools: ["React", "HTML", "CSS", "SASS"],
+		liveUrl: "https://get-linked-landing.vercel.app/",
+		codeUrl: "https://github.com/Okoli-Ryan/getLinked-landing",
 	},
 	{
 		desktop: "/images/projects/raadio_desktop.png",
@@ -44,6 +51,8 @@ export const PROJECTS: ProjectItemProps[] = [
 		link: "/raadio",
 		type: "web",
 		tools: ["React", "HTML", "CSS", "Tailwind CSS"],
+		codeUrl: "https://github.com/Okoli-Ryan/Music-Player",
+		liveUrl: "https://raadio.vercel.app",
 	},
 	{
 		desktop: "/images/projects/clickup_desktop.png",
@@ -53,6 +62,8 @@ export const PROJECTS: ProjectItemProps[] = [
 		link: "/clickup",
 		type: "web",
 		tools: ["React", "HTML", "CSS", "Webpack", "SASS"],
+		codeUrl: "https://github.com/Okoli-Ryan/Clickup-Challenge",
+		liveUrl: "https://clickup-challenge.netlify.app",
 	},
 	{
 		desktop: "/images/projects/teamflow_desktop.png",
@@ -62,6 +73,8 @@ export const PROJECTS: ProjectItemProps[] = [
 		link: "/teamflow",
 		type: "web",
 		tools: ["React", "HTML", "CSS", "Tailwind CSS"],
+		codeUrl: "https://github.com/Okoli-Ryan/Teamflow",
+		liveUrl: "https://teamflow-six.vercel.app",
 	},
 	{
 		desktop: "/images/projects/space-tourism_desktop.png",
@@ -71,6 +84,8 @@ export const PROJECTS: ProjectItemProps[] = [
 		link: "/space-tourism",
 		type: "web",
 		tools: ["React", "HTML", "CSS", "Tailwind CSS"],
+		codeUrl: "https://github.com/Okoli-Ryan/space-tourism",
+		liveUrl: "https://space-tourism-omega-three.vercel.app",
 	},
 	{
 		mobile: "/images/projects/wazobia_app.png",
@@ -79,6 +94,8 @@ export const PROJECTS: ProjectItemProps[] = [
 		link: "/wazobia",
 		type: "mobile",
 		tools: ["React Native", "Redux", "Native Base", "Firebase", "A/B Testing"],
+		codeUrl: "https://github.com/Okoli-Ryan/Wazobia",
+		liveUrl: "https://drive.google.com/drive/folders/1JcOIQJfw_ZNW8NgfxnGreNZGm4z_-LBl?usp=share_link",
 	},
 	{
 		mobile: "/images/projects/instagram_app.png",
@@ -86,7 +103,9 @@ export const PROJECTS: ProjectItemProps[] = [
 		description: "A clone of the instagram app",
 		link: "/instagram",
 		type: "mobile",
-		tools: ["React Native"],
+		tools: ["React Native", "React-Native-Reanimated"],
+		codeUrl: "https://github.com/Okoli-Ryan/Instagram-UI-clone",
+		liveUrl: "https://drive.google.com/drive/folders/1P-TXwFY0tXMU4xvfo4sk-XAYJ_DknbUT?usp=share_link",
 	},
 	{
 		mobile: "/images/projects/figocard_app.png",
@@ -97,3 +116,7 @@ export const PROJECTS: ProjectItemProps[] = [
 		tools: ["React Native", "Redux", "Native Base", "Firebase", "React Testing Library", "Jest"],
 	},
 ];
+
+// TODO Add modern todo project
+// TODO Add React Native Ivorypay
+// TODO Nigerite Emenite
