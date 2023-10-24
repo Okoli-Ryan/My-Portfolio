@@ -5,6 +5,7 @@ export const SKILLS = [
 	"TypeScript",
 	"React",
 	"NextJs",
+	"Responsive Design",
 	"C#",
 	"ASP.NET",
 	"Redux",

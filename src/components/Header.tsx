@@ -13,10 +13,6 @@ const NAV_ROUTES = [
 		href: "#about",
 	},
 	{
-		name: "Skills",
-		href: "#skills",
-	},
-	{
 		name: "Projects",
 		href: "#projects",
 	},
