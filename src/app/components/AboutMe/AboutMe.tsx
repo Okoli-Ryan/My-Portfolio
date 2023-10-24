@@ -4,7 +4,7 @@ import LinkButton from "@/components/Button";
 
 export default function AboutMe() {
 	return (
-		<div className="container flex gap-8 flex-col bottom-border py-16">
+		<div className="container flex gap-8 flex-col bottom-border py-16" id="about">
 			<h2 className="text-3xl ">About Me</h2>
 			<p className="leading-8 font-sans">
 				I am a highly skilled and results-driven Fullstack Developer with expertise in{" "}
