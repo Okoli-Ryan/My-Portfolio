@@ -5,7 +5,7 @@ import Projects from "./components/Projects";
 
 export default function Home() {
 	return (
-		<div className="relative w-full">
+		<div className="relative w-full z-[5]">
 			<Hero />
 			<AboutMe />
 			{/* <Projects /> */}

@@ -15,11 +15,12 @@ body {
 
 .dot-body {
 	opacity: 1;
-	background-image: radial-gradient(#666 0.6000000000000001px, transparent 0.6000000000000001px),
-		radial-gradient(#666 0.6000000000000001px, #0e0e0e 0.6000000000000001px);
+	background-image: radial-gradient(#333 0.6000000000000001px, transparent 0.6000000000000001px),
+		radial-gradient(#333 0.6000000000000001px, transparent 0.6000000000000001px);
 	background-size: 24px 24px;
 	background-position: 0 0, 12px 12px;
-    @apply bg-dark;
+    /* @apply bg-dark; */
+    @apply bg-transparent z-10;
 }
 
 .container {
