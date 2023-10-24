@@ -1,6 +1,6 @@
 import React from "react";
 
-import Button from "@/components/Button";
+import LinkButton from "@/components/Button";
 
 export default function AboutMe() {
 	return (
@@ -14,7 +14,7 @@ export default function AboutMe() {
 				and crypto-payment platforms. Feel free to checkout my <span className="bold">Resume</span>, or <span className="bold">contact me</span> through
 				my links.
 			</p>
-			<Button className="self-start">Contact</Button>
+			<LinkButton className="self-start">Contact</LinkButton>
 		</div>
 	);
 }

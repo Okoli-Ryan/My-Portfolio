@@ -1,10 +1,10 @@
 import React from "react";
 
-import Button from "@/components/Button";
+import LinkButton from "@/components/Button";
 
 export default function ContactForm() {
 	return (
-		<form className="p-6 flex flex-col gap-6 bg-[#262626] rounded-md">
+		<form className="p-6 flex flex-col gap-6 bg-darkGray rounded-md">
 			<section className="flex flex-col gap-2">
 				<label htmlFor="name" className="text-sm font-sans">
 					Name
@@ -35,7 +35,7 @@ export default function ContactForm() {
 					placeholder="Enter Your Message"
 				/>
 			</section>
-			<Button role="button">Submit</Button>
+			<LinkButton role="button">Submit</LinkButton>
 		</form>
 	);
 }

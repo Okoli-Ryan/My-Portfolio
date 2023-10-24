@@ -8,6 +8,7 @@ const config: Config = {
 				primary: "#7843e9",
 				dark: "#0e0e0e",
 				light: "#f8f8f8",
+				darkGray: "#262626",
 			},
 			backgroundImage: {
 				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
