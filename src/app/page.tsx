@@ -8,7 +8,7 @@ export default function Home() {
 		<div className="relative w-full z-[5]">
 			<Hero />
 			<AboutMe />
-			{/* <Projects /> */}
+			<Projects />
 			{/* <Contact /> */}
 		</div>
 	);
