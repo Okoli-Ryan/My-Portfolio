@@ -39,3 +39,18 @@ body {
 a {
     text-decoration: underline;
 }
+
+.head-underline {
+    position: relative;
+}
+
+.head-underline:before {
+    content: "";
+    height: 4px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -16px;
+    width: 50%;
+    @apply bg-primary
+}

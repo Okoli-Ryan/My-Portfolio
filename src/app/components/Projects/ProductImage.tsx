@@ -5,7 +5,7 @@ import { ProjectItemProps } from './projects.data';
 
 export default function ProjectImage({ name, desktop, mobile }: Partial<ProjectItemProps>) {
 	return (
-		<div className="relative overflow-hidden w-max mx-auto lg:mx-[unset]">
+		<div className="relative overflow-hidden w-max lg:w-full mx-auto lg:mx-[unset]">
 			<Image width={540} height={350} alt={`${name} desktop image`} src={desktop!} className="w-full h-auto max-w-lg object-contain" />
 			<Image
 				width={450}
