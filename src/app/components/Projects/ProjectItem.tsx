@@ -17,7 +17,7 @@ export function ProjectItem({ name, desktop, mobile, description, type, tools, c
 						height={519}
 						alt={`${name} app image`}
 						src={mobile!}
-						className="w-full h-auto max-h-96 lg:max-h-[28rem] max-w-lg object-contain"
+						className="w-full h-auto max-h-96 lg:max-h-[28rem] max-w-lg object-contain mx-auto"
 					/>
 				)}
 			</div>
@@ -26,7 +26,7 @@ export function ProjectItem({ name, desktop, mobile, description, type, tools, c
 				<p className="text-center leading-6 lg:text-left">{description}</p>
 				<div className="flex gap-2 flex-wrap justify-center lg:justify-start">
 					{tools!.map((tool, index) => (
-						<span key={index} className="flex gap-3 items-center bg-darkGray rounded-2xl max-w-max py-1 px-3">
+						<span key={index} className="flex gap-3 items-center bg-darkGray rounded-2xl max-w-max self-center py-1 px-3">
 							<span className="h-2 w-2 rounded-full bg-purple-500 animate-pulse"></span>
 							<span className="font-mono text-sm">{tool}</span>
 						</span>

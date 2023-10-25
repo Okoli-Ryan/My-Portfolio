@@ -1,6 +1,8 @@
+import Link from 'next/link';
 import React from 'react';
 
 import LinkButton from '@/components/LinkButton';
+import { RESUME_LINK } from '@/constants';
 
 import Skills from '../Skills';
 
@@ -19,8 +21,15 @@ export default function AboutMe() {
 						<span className="bold">React, NextJs, React Native and ASP.NET.</span> With a strong background in web design and mobile development, I
 						have a passion for creating exceptional user experiences and delivering innovative solutions. <br />
 						Throughout my career, I have successfully designed and developed web and mobile applications for various industries across fintech,
-						ecommerce, and crypto-payment platforms. Feel free to checkout my <span className="bold">Resume</span>, or{" "}
-						<span className="bold">contact me</span> through my links.
+						ecommerce, and crypto-payment platforms. Feel free to checkout my{" "}
+						<LinkButton variant="ghost" newTab href={RESUME_LINK} className="!underline bold">
+							Resume
+						</LinkButton>
+						, or{" "}
+						<LinkButton variant="ghost" href="#contact" className="!underline bold">
+							contact me
+						</LinkButton>{" "}
+						through my links.
 					</p>
 					<LinkButton className="self-start">Contact</LinkButton>
 				</div>
