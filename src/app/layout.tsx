@@ -8,6 +8,8 @@ import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import StarsBackground from '@/components/StarsBackground';
 
+import Sidebar from "./components/Sidebar";
+
 const poppins = Poppins({ subsets: ["latin"], variable: "--font-poppins", weight: ["400", "700"] });
 const raleway = Raleway({ subsets: ["latin"], variable: "--font-raleway", weight: ["400", "700"] });
 
@@ -20,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 	return (
 		<html lang="en">
 			<body className={` ${poppins.variable} ${raleway.variable} relative`}>
+				<Sidebar />
 				<Header />
 				{children}
 				<Footer />

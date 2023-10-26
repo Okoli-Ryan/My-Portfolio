@@ -18,10 +18,11 @@ export default function AboutMe() {
 					<h3 className="text-white text-xl font-bold text-center lg:text-left">Get To Know me!</h3>
 					<p className="leading-8 font-sans">
 						I am a highly skilled and results-driven Fullstack Developer with expertise in{" "}
-						<span className="bold">React, NextJs, React Native and ASP.NET.</span> With a strong background in web design and mobile development, I
-						have a passion for creating exceptional user experiences and delivering innovative solutions. <br />
-						Throughout my career, I have successfully designed and developed web and mobile applications for various industries across fintech,
-						ecommerce, and crypto-payment platforms. Feel free to checkout my{" "}
+						<span className="bold">React, NextJs, React Native and ASP.NET.</span> With a strong background in{" "}
+						<span className="bold">web and mobile development</span>, I have a passion for creating exceptional user experiences and delivering
+						innovative solutions. <br />
+						Throughout my career, I have successfully designed and developed web and mobile applications for various industries across{" "}
+						<span className="bold">fintech, ecommerce, and crypto-payment</span> platforms. Feel free to checkout my{" "}
 						<LinkButton variant="ghost" newTab href={RESUME_LINK} className="!underline bold">
 							Resume
 						</LinkButton>
@@ -31,7 +32,6 @@ export default function AboutMe() {
 						</LinkButton>{" "}
 						through my links.
 					</p>
-					<LinkButton className="self-start">Contact</LinkButton>
 				</div>
 				<Skills />
 			</div>

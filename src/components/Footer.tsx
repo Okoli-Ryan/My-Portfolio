@@ -2,6 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
+import { SOCIALS } from "@/constants";
+
 import LinkButton from './LinkButton';
 
 export default function Footer() {
@@ -31,9 +33,3 @@ export default function Footer() {
 		</>
 	);
 }
-
-const SOCIALS = [
-	{ name: "email", path: "/icons/email.svg", link: "mailto:okoliryan50@gmail.com" },
-	{ name: "github", path: "/icons/github.svg", link: "https://github.com/Okoli-Ryan" },
-	{ name: "linkedin", path: "/icons/linkedin.svg", link: "https://www.linkedin.com/in/okoliugo" },
-];

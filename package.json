@@ -10,9 +10,10 @@
   },
   "dependencies": {
     "next": "13.5.6",
+    "next-reveal": "^1.0.6",
     "react": "^18",
-    "react-dom": "^18",
-    "react-icons": "^4.11.0"
+    "react-awesome-reveal": "^4.2.5",
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",

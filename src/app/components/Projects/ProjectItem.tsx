@@ -1,3 +1,5 @@
+"use client";
+import { RevealList } from 'next-reveal';
 import Image from 'next/image';
 
 import LinkButton from '@/components/LinkButton';
@@ -7,7 +9,7 @@ import { ProjectItemProps } from './projects.data';
 
 export function ProjectItem({ name, desktop, mobile, description, type, tools, codeUrl, liveUrl }: Partial<ProjectItemProps>) {
 	return (
-		<div className="mt-4 flex flex-col lg:flex-row gap-8 gap-x-[10%] items-center">
+		<RevealList interval={100} delay={500} origin="bottom" className="mt-4 flex flex-col lg:flex-row gap-8 gap-x-[10%] items-center">
 			<div className="w-full lg:w-1/2">
 				{type === "web" ? (
 					<ProjectImage name={name} desktop={desktop} mobile={mobile} />
@@ -21,6 +23,7 @@ export function ProjectItem({ name, desktop, mobile, description, type, tools, c
 					/>
 				)}
 			</div>
+
 			<div className="flex flex-col gap-8 w-full lg:w-1/2">
 				<h3 className="text-white text-2xl font-bold text-center lg:text-left mt-8">{name}</h3>
 				<p className="text-center leading-6 lg:text-left">{description}</p>
@@ -45,6 +48,6 @@ export function ProjectItem({ name, desktop, mobile, description, type, tools, c
 					)}
 				</div>
 			</div>
-		</div>
+		</RevealList>
 	);
 }

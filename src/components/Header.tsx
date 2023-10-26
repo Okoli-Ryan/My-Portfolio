@@ -3,6 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
+import { RESUME_LINK } from "@/constants";
+
+import LinkButton from "./LinkButton";
+
 const NAV_ROUTES = [
 	{
 		name: "Home",
@@ -19,6 +23,11 @@ const NAV_ROUTES = [
 	{
 		name: "Contact",
 		href: "#contact",
+	},
+	{
+		name: "Resume",
+		href: RESUME_LINK,
+		isButton: true,
 	},
 ];
 
@@ -43,16 +52,32 @@ export default function Header() {
 						<button className="flex md:hidden" onClick={toggleDrawer}>
 							<Image width={24} height={24} alt="Menu button" src="/icons/hamburger menu.svg" />
 						</button>
+						<ul className="gap-8 hidden md:flex">
+							{NAV_ROUTES.map((route) => (
+								<li key={route.name}>
+									<LinkButton
+										variant={route.isButton ? "outline" : "ghost"}
+										href={route.href}
+										className="no-underline hover:text-purple-500 transition-colors">
+										{route.name}
+									</LinkButton>
+								</li>
+							))}
+						</ul>
 					</div>
 				</div>
-				<div className="relative z-0 w-full bg-dark">
+				<div className="relative z-0 w-full bg-dark block md:hidden">
 					<div className={`bg-dark absolute w-full  duration-300 transition-all z-0 ${isDrawerOpen ? drawerClass.open : drawerClass.closed}`}>
 						<ul className={`items-end container right-0 left-0 py-2 pb-4 gap-8 flex flex-col w-full  duration-300 transition-all z-0`}>
 							{NAV_ROUTES.map((route) => (
-								<li key={route.name} className="w-full text-right">
-									<Link href={route.href} className="no-underline font-bold w-full block text-right" onClick={toggleDrawer}>
+								<li key={route.name} className="text-right">
+									<LinkButton
+										variant={route.isButton ? "outline" : "ghost"}
+										href={route.href}
+										className="no-underline font-bold block text-right"
+										onClick={toggleDrawer}>
 										{route.name}
-									</Link>
+									</LinkButton>
 								</li>
 							))}
 						</ul>
