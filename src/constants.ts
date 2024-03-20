@@ -1,4 +1,4 @@
-export const RESUME_LINK = "https://flowcv.com/resume/s55es152qr";
+export const RESUME_LINK = "https://drive.google.com/file/d/19o0FI-s73sh9ldFb9lOuZ3kBOMRRp04a/view?usp=sharing";
 
 export const SOCIALS = [
 	{ name: "email", path: "/icons/email.svg", link: "mailto:okoliryan50@gmail.com" },

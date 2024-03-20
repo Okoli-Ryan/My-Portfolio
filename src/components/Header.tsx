@@ -20,14 +20,15 @@ const NAV_ROUTES = [
 		name: "Projects",
 		href: "#projects",
 	},
-	{
-		name: "Contact",
-		href: "#contact",
-	},
+	// {
+	// 	name: "Contact",
+	// 	href: "#contact",
+	// },
 	{
 		name: "Resume",
 		href: RESUME_LINK,
 		isButton: true,
+		newTab: true,
 	},
 ];
 
@@ -56,6 +57,7 @@ export default function Header() {
 							{NAV_ROUTES.map((route) => (
 								<li key={route.name}>
 									<LinkButton
+										newTab={route.newTab}
 										variant={route.isButton ? "outline" : "ghost"}
 										href={route.href}
 										className="no-underline hover:text-purple-500 transition-colors">
@@ -74,6 +76,7 @@ export default function Header() {
 									<LinkButton
 										variant={route.isButton ? "outline" : "ghost"}
 										href={route.href}
+										newTab={route.newTab}
 										className="no-underline font-bold block text-right"
 										onClick={toggleDrawer}>
 										{route.name}
